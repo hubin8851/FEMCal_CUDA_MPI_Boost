@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<root>
+	<ElementObj name="CPS3" Type="200003">
+		<Property StressOrStrain="Stress"/>
+	</ElementObj>
+	<ElementObj name="CPE3" Type="201003">
+		<Property StressOrStrain="Strain"/>
+	</ElementObj>
+	<ElementObj name="S3" Type="200003">
+		<Property StressOrStrain="INF"/>
+	</ElementObj>
+	<ElementObj name="C3D6" Type="300006">
+		<Property StressOrStrain="INF"/>
+	</ElementObj>
+	<ElementObj name="C3D8R" Type="300008">
+		<Property StressOrStrain="INF"/>
+	</ElementObj>
+</root>

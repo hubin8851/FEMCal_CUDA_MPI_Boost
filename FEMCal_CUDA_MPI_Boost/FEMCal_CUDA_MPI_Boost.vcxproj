@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{887925CA-2765-4E35-8958-0AA024D2A2B0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FEMCal_CUDA_MPI_Boost</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+    <LibraryPath>$(LIBPATH);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIBPATH);$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(INCLUDE);$(IncludePath)</IncludePath>
+    <LibraryPath>$(LIBPATH);$(LibraryPath)</LibraryPath>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules />
+    <CodeAnalysisRuleAssemblies />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions>-Zm250 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(ADDITIONALLIBS);libboost_atomic-vc110-mt-gd-1_57.lib;libboost_chrono-vc110-mt-gd-1_57.lib;libboost_container-vc110-mt-gd-1_57.lib;libboost_context-vc110-mt-gd-1_57.lib;libboost_coroutine-vc110-mt-gd-1_57.lib;libboost_date_time-vc110-mt-gd-1_57.lib;libboost_exception-vc110-mt-gd-1_57.lib;libboost_filesystem-vc110-mt-gd-1_57.lib;libboost_graph-vc110-mt-gd-1_57.lib;libboost_iostreams-vc110-mt-gd-1_57.lib;libboost_locale-vc110-mt-gd-1_57.lib;libboost_log-vc110-mt-gd-1_57.lib;libboost_log_setup-vc110-mt-gd-1_57.lib;libboost_math_c99-vc110-mt-gd-1_57.lib;libboost_math_c99f-vc110-mt-gd-1_57.lib;libboost_math_c99l-vc110-mt-gd-1_57.lib;libboost_math_tr1-vc110-mt-gd-1_57.lib;libboost_math_tr1f-vc110-mt-gd-1_57.lib;libboost_math_tr1l-vc110-mt-gd-1_57.lib;libboost_prg_exec_monitor-vc110-mt-gd-1_57.lib;libboost_program_options-vc110-mt-gd-1_57.lib;libboost_random-vc110-mt-gd-1_57.lib;libboost_regex-vc110-mt-gd-1_57.lib;libboost_signals-vc110-mt-gd-1_57.lib;libboost_system-vc110-mt-gd-1_57.lib;libboost_test_exec_monitor-vc110-mt-gd-1_57.lib;libboost_thread-vc110-mt-gd-1_57.lib;libboost_timer-vc110-mt-gd-1_57.lib;libboost_unit_test_framework-vc110-mt-gd-1_57.lib;libboost_wave-vc110-mt-gd-1_57.lib;libboost_wserialization-vc110-mt-gd-1_57.lib;cudart_static.lib;libmysql.lib;mysqlclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_20,sm_20;compute_30,sm_30;compute_35,sm_35;compute_37,sm_37;compute_50,sm_50;%(CodeGeneration)</CodeGeneration>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Zm250 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(ADDITIONALLIBS);libboost_atomic-vc100-mt-1_57.lib;libboost_chrono-vc100-mt-1_57.lib;libboost_container-vc100-mt-1_57.lib;libboost_context-vc100-mt-1_57.lib;libboost_coroutine-vc100-mt-1_57.lib;libboost_date_time-vc100-mt-1_57.lib;libboost_exception-vc100-mt-1_57.lib;libboost_filesystem-vc100-mt-1_57.lib;libboost_graph-vc100-mt-1_57.lib;libboost_iostreams-vc100-mt-1_57.lib;libboost_locale-vc100-mt-1_57.lib;libboost_log-vc100-mt-1_57.lib;libboost_log_setup-vc100-mt-1_57.lib;libboost_math_c99-vc100-mt-1_57.lib;libboost_math_c99f-vc100-mt-1_57.lib;libboost_math_c99l-vc100-mt-1_57.lib;libboost_math_tr1-vc100-mt-1_57.lib;libboost_math_tr1f-vc100-mt-1_57.lib;libboost_math_tr1l-vc100-mt-1_57.lib;libboost_prg_exec_monitor-vc100-mt-1_57.lib;libboost_program_options-vc100-mt-1_57.lib;libboost_random-vc100-mt-1_57.lib;libboost_regex-vc100-mt-1_57.lib;libboost_serialization-vc100-mt-1_57.lib;libboost_signals-vc100-mt-1_57.lib;libboost_system-vc100-mt-1_57.lib;libboost_test_exec_monitor-vc100-mt-1_57.lib;libboost_thread-vc100-mt-1_57.lib;libboost_timer-vc100-mt-1_57.lib;libboost_unit_test_framework-vc100-mt-1_57.lib;libboost_wave-vc100-mt-1_57.lib;libboost_wserialization-vc100-mt-1_57.lib;cusparse.lib;cusolver.lib;cudart_static.lib;cublas.lib;cudart.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir);F:\data from HBX_phd\vs2012\FEMPlateTest\FEMPlateTest\LIB</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WITHTEST;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>-Zm250 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>$(ADDITIONALLIBS);kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;libmysql.lib;mysqlclient.lib;libboost_atomic-vc110-mt-1_57.lib;libboost_chrono-vc110-mt-1_57.lib;libboost_container-vc110-mt-1_57.lib;libboost_context-vc110-mt-1_57.lib;libboost_coroutine-vc110-mt-1_57.lib;libboost_date_time-vc110-mt-1_57.lib;libboost_exception-vc110-mt-1_57.lib;libboost_filesystem-vc110-mt-1_57.lib;libboost_graph-vc110-mt-1_57.lib;libboost_iostreams-vc110-mt-1_57.lib;libboost_locale-vc110-mt-1_57.lib;libboost_log-vc110-mt-1_57.lib;libboost_log_setup-vc110-mt-1_57.lib;libboost_math_c99-vc110-mt-1_57.lib;libboost_math_c99f-vc110-mt-1_57.lib;libboost_math_c99l-vc110-mt-1_57.lib;libboost_math_tr1-vc110-mt-1_57.lib;libboost_math_tr1f-vc110-mt-1_57.lib;libboost_math_tr1l-vc110-mt-1_57.lib;libboost_prg_exec_monitor-vc110-mt-1_57.lib;libboost_program_options-vc110-mt-1_57.lib;libboost_random-vc110-mt-1_57.lib;libboost_regex-vc110-mt-1_57.lib;libboost_signals-vc110-mt-1_57.lib;libboost_system-vc110-mt-1_57.lib;libboost_test_exec_monitor-vc110-mt-1_57.lib;libboost_thread-vc110-mt-1_57.lib;libboost_timer-vc110-mt-1_57.lib;libboost_unit_test_framework-vc110-mt-1_57.lib;libboost_wave-vc110-mt-1_57.lib;libboost_wserialization-vc110-mt-1_57.lib;libmat.lib;libmx.lib;libmex.lib;libeng.lib;tinyxmlx64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(CudaToolkitLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <CudaCompile>
+      <CodeGeneration>compute_52,sm_52</CodeGeneration>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <Runtime>InheritFromHost</Runtime>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CB31Elemt.inl" />
+    <None Include="CBaseElemt.inl" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="HbxGloFunc.inl" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseLag.h" />
+    <ClInclude Include="CB31Elemt.hpp" />
+    <ClInclude Include="BaseDConjugate.h" />
+    <ClInclude Include="BaseSConjugate.h" />
+    <ClInclude Include="CBaseElemt.hpp" />
+    <ClInclude Include="CBaseSection.hpp" />
+    <ClInclude Include="BaseXConjugate.hpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="BiCGStabD.h" />
+    <ClInclude Include="BoostPreDef.h" />
+    <ClInclude Include="C3D8RElemt.hpp" />
+    <ClInclude Include="CBaseMaterial.hpp" />
+    <ClInclude Include="CFrameElement.hpp" />
+    <ClInclude Include="CMatrix.hpp" />
+    <ClInclude Include="CntToMysql.h" />
+    <ClInclude Include="CPlaneElement.hpp" />
+    <ClInclude Include="CTri2D3NElemt.hpp" />
+    <ClInclude Include="CuComponent.cuh" />
+    <ClInclude Include="CudaPreDef.h" />
+    <ClInclude Include="CGSMatCal.h" />
+    <ClInclude Include="CGSMatCal_UM.h" />
+    <ClInclude Include="DataInput_d.h" />
+    <ClInclude Include="DataInput_f.h" />
+    <ClInclude Include="EigenCal.h" />
+    <ClInclude Include="EigenPreDef.h" />
+    <ClInclude Include="CGDMatCal.h" />
+    <ClInclude Include="GaussIntegralRule.h" />
+    <ClInclude Include="HbxDefMacro.h" />
+    <ClInclude Include="HBXDefStruct.h" />
+    <ClInclude Include="HBXFEMDefMacro.h" />
+    <ClInclude Include="HBXFEMDefStruct.h" />
+    <ClInclude Include="HbxFEMFunc.h" />
+    <ClInclude Include="HbxGloFunc.h" />
+    <ClInclude Include="helper_hbx.h" />
+    <ClInclude Include="ImpFrmMatlab.h" />
+    <ClInclude Include="IntegralRule.h" />
+    <ClInclude Include="CuInterpolation.h" />
+    <ClInclude Include="MatlabPreDef.h" />
+    <ClInclude Include="MatrixAssemble.h" />
+    <ClInclude Include="PCGDMatCal.h" />
+    <ClInclude Include="PCGSMatCal.h" />
+    <ClInclude Include="SSOR_PCGMatCal.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserDefArray.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="XMLManage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseDConjugate.cpp" />
+    <None Include="BaseLag.inl">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <FileType>Document</FileType>
+    </None>
+    <ClCompile Include="BaseSConjugate.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="BiCGStabD.cpp" />
+    <ClCompile Include="CntToMysql.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <None Include="CuComponent.inl">
+      <FileType>CppCode</FileType>
+    </None>
+    <ClCompile Include="DataInput_d.cpp" />
+    <ClCompile Include="DataInput_f.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="EigenCal.cpp" />
+    <ClCompile Include="FEMCal_CUDA_MPI_Boost.cpp" />
+    <ClCompile Include="CGSMatCal.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CGSMatCal_UM.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="CGDMatCal.cpp" />
+    <ClCompile Include="GaussIntegralRule.cpp" />
+    <ClCompile Include="HBXFEMDefStruct.cpp" />
+    <ClCompile Include="HbxFEMFunc.cpp" />
+    <ClCompile Include="HbxGloFunc.cpp" />
+    <ClCompile Include="ImpFrmMatlab.cpp" />
+    <ClCompile Include="IntegralRule.cpp" />
+    <None Include="CuInterpolation.inl">
+      <FileType>CppCode</FileType>
+    </None>
+    <ClCompile Include="MatrixAssemble.cpp" />
+    <ClCompile Include="mmio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PCGDMatCal.cpp" />
+    <ClCompile Include="PCGSMatCal.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SSOR_PCGMatCal.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="XMLManage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CuInterpolation.cu">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+</Project>

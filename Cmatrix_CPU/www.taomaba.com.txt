@@ -1,0 +1,27 @@
+                ╭═══════════════╮
+                ║                              ║
+  ╭══════┤             淘码吧           ├══════╮
+  ║            ║     http://www.taomaba.com   ║            ║
+  ║            ║                              ║            ║
+  ║            ╰═══════════════╯            ║
+　║     Delphi、.NET、VC & C++、VB、Java、Flash代码下载      ║
+  ║          以及相关的技术文章、技术交流、技术书籍          ║
+  ║                  视频教程、相关控件下载                  ║
+  ║                                                          ║
+  ║                                                          ║
+　║声明：                                                    ║
+  ║   1) 本站不保证所提供软件或程序的完整性和安全性。        ║
+  ║   2) 请在使用前查毒。                                    ║
+  ║   3) 转载本站提供的资源请勿删除本说明文件。              ║
+  ║   4) 本站提供的程序均为网上搜集，如果该程序涉及或侵害到您║
+  ║      的版权请立即写信通知我们。                          ║
+  ║   5) 本站提供代码只可供研究使用，请在下载24小时内删除,   ║
+  ║      切勿用于商业用途，由此引起一切后果与本站无关。      ║
+  ║                                                          ║
+  ║                                                          ║
+  ║                                                          ║
+  ║    ╭───────────────────────╮    ║
+  ╰══┤         淘码吧 http://www.taomaba.com        ├══╯
+        ╰───────────────────────╯
+
+

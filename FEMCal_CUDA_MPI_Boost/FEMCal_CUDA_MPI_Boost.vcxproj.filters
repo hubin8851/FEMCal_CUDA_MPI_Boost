@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\PreDef">
+      <UniqueIdentifier>{6ad0e5a5-7072-41c2-958f-7bf0940e3712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\单精度迭代算法">
+      <UniqueIdentifier>{96f74bd2-a419-45f2-b94f-5471c8478db4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\数据导入程序">
+      <UniqueIdentifier>{0d39a473-7013-48a3-84e4-8b1077d5bd7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\数据导入程序">
+      <UniqueIdentifier>{fdf7d101-ca94-4507-a694-2a71b686b54b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\单精度迭代算法">
+      <UniqueIdentifier>{2ef07849-3b29-4123-aacc-61803f92a225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\双精度迭代算法">
+      <UniqueIdentifier>{a525a0d3-5124-4085-b8f1-b7af53da2ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\双精度迭代算法">
+      <UniqueIdentifier>{26d76db3-5f7e-474b-a3c0-9ff06436e880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\单元类">
+      <UniqueIdentifier>{417c4994-60da-4edb-ba8c-3184b998ed33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\迭代算法">
+      <UniqueIdentifier>{dfaf82f0-f717-459c-beae-037d6d7fbeac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\截面类">
+      <UniqueIdentifier>{215c731f-300b-4532-bbfb-060f9e619908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\PreDef">
+      <UniqueIdentifier>{65564a2c-3887-4b44-911c-3d00e37b7d6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\材料类">
+      <UniqueIdentifier>{af4a82a8-648b-46b6-a05b-2b850abd3ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\单元类">
+      <UniqueIdentifier>{32568d1e-f836-42ed-b6d0-733700f54be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\积分插值类">
+      <UniqueIdentifier>{6b2e2f01-041b-410d-b65b-6facd77bcd04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\积分插值类">
+      <UniqueIdentifier>{a74e8150-f73d-45d3-8db7-4c7d404310d7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="HbxGloFunc.inl">
+      <Filter>源文件\PreDef</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="CB31Elemt.inl">
+      <Filter>源文件\单元类</Filter>
+    </None>
+    <None Include="CBaseElemt.inl">
+      <Filter>源文件\单元类</Filter>
+    </None>
+    <None Include="BaseLag.inl">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="CuComponent.inl">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="CuInterpolation.inl">
+      <Filter>源文件\积分插值类</Filter>
+    </None>
+    <None Include="CuInterpolation.cu">
+      <Filter>源文件\积分插值类</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HbxDefMacro.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="HBXDefStruct.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="HbxGloFunc.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="BoostPreDef.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaPreDef.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="CntToMysql.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HbxFEMFunc.h">
+      <Filter>头文件\数据导入程序</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLManage.h">
+      <Filter>头文件\数据导入程序</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixAssemble.h">
+      <Filter>头文件\数据导入程序</Filter>
+    </ClInclude>
+    <ClInclude Include="CMatrix.hpp">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInput_f.h">
+      <Filter>头文件\数据导入程序</Filter>
+    </ClInclude>
+    <ClInclude Include="DataInput_d.h">
+      <Filter>头文件\数据导入程序</Filter>
+    </ClInclude>
+    <ClInclude Include="EigenPreDef.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="EigenCal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CGSMatCal.h">
+      <Filter>头文件\单精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="PCGSMatCal.h">
+      <Filter>头文件\单精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="CGSMatCal_UM.h">
+      <Filter>头文件\单精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseSConjugate.h">
+      <Filter>头文件\单精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDConjugate.h">
+      <Filter>头文件\双精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="CGDMatCal.h">
+      <Filter>头文件\双精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="PCGDMatCal.h">
+      <Filter>头文件\双精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="CTri2D3NElemt.hpp">
+      <Filter>头文件\单元类</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlaneElement.hpp">
+      <Filter>头文件\单元类</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrameElement.hpp">
+      <Filter>头文件\单元类</Filter>
+    </ClInclude>
+    <ClInclude Include="C3D8RElemt.hpp">
+      <Filter>头文件\单元类</Filter>
+    </ClInclude>
+    <ClInclude Include="MatlabPreDef.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="ImpFrmMatlab.h">
+      <Filter>头文件\数据导入程序</Filter>
+    </ClInclude>
+    <ClInclude Include="helper_hbx.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="SSOR_PCGMatCal.h">
+      <Filter>头文件\双精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseXConjugate.hpp">
+      <Filter>头文件\迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="BiCGStabD.h">
+      <Filter>头文件\双精度迭代算法</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseMaterial.hpp">
+      <Filter>头文件\材料类</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseSection.hpp">
+      <Filter>头文件\截面类</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseElemt.hpp">
+      <Filter>头文件\单元类</Filter>
+    </ClInclude>
+    <ClInclude Include="CB31Elemt.hpp">
+      <Filter>头文件\单元类</Filter>
+    </ClInclude>
+    <ClInclude Include="HBXFEMDefMacro.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegralRule.h">
+      <Filter>头文件\积分插值类</Filter>
+    </ClInclude>
+    <ClInclude Include="GaussIntegralRule.h">
+      <Filter>头文件\积分插值类</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefArray.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="CuComponent.cuh">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HBXFEMDefStruct.h">
+      <Filter>头文件\PreDef</Filter>
+    </ClInclude>
+    <ClInclude Include="CuInterpolation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseLag.h">
+      <Filter>头文件\积分插值类</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HbxGloFunc.cpp">
+      <Filter>源文件\PreDef</Filter>
+    </ClCompile>
+    <ClCompile Include="CntToMysql.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HbxFEMFunc.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="HBXFEMDefStruct.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLManage.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixAssemble.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="DataInput_f.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="DataInput_d.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="EigenCal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CGSMatCal.cpp">
+      <Filter>源文件\单精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="CGSMatCal_UM.cpp">
+      <Filter>源文件\单精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="PCGSMatCal.cpp">
+      <Filter>源文件\单精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseSConjugate.cpp">
+      <Filter>源文件\单精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDConjugate.cpp">
+      <Filter>源文件\双精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="CGDMatCal.cpp">
+      <Filter>源文件\双精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="PCGDMatCal.cpp">
+      <Filter>源文件\双精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="ImpFrmMatlab.cpp">
+      <Filter>源文件\数据导入程序</Filter>
+    </ClCompile>
+    <ClCompile Include="SSOR_PCGMatCal.cpp">
+      <Filter>源文件\双精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="BiCGStabD.cpp">
+      <Filter>源文件\双精度迭代算法</Filter>
+    </ClCompile>
+    <ClCompile Include="mmio.c">
+      <Filter>源文件\PreDef</Filter>
+    </ClCompile>
+    <ClCompile Include="GaussIntegralRule.cpp">
+      <Filter>源文件\积分插值类</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegralRule.cpp">
+      <Filter>源文件\积分插值类</Filter>
+    </ClCompile>
+    <ClCompile Include="FEMCal_CUDA_MPI_Boost.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
